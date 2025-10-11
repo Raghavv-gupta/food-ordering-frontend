@@ -1,0 +1,27 @@
+import express from 'express';
+
+const app = express();
+
+app.get('/robots.txt', (req, res) => {
+  res.type('text/plain');
+  res.send(`
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+  `);
+});
+
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
