@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar';
 import { useCart } from '../contexts/CartContext';
 import { Button } from '../components/ui/button';
 
+
 const CartPage = () => {
   const { cart, updateQuantity, removeFromCart, getTotalPrice, clearCart } = useCart();
   const total = getTotalPrice();
@@ -67,7 +68,7 @@ const CartPage = () => {
                       <div className="flex-1">
                         <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
                         <p className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                          ${item.price.toFixed(2)}
+                          ₹{item.price}
                         </p>
                       </div>
 
@@ -110,7 +111,7 @@ const CartPage = () => {
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-2xl font-display font-bold">Total:</span>
                     <span className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                      ${total.toFixed(2)}
+                      ₹{total}
                     </span>
                   </div>
 

@@ -42,13 +42,6 @@ const AuthSelectRole = () => {
             </div>
           </button>
         </div>
-
-        <p className="mt-8 text-sm text-gray-600">
-          Already have an account?{" "}
-          <Link to="/auth/login" className="text-orange-600 font-medium">
-            Login
-          </Link>
-        </p>
       </div>
     </div>
   );

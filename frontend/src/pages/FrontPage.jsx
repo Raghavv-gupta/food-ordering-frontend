@@ -113,7 +113,7 @@ const FrontPage = () => {
               craving!
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {["🍕 Pizza", "🍔 Burgers", "🥤 Drinks", "🍰 Desserts"].map(
                 (item, index) => (
                   <div
@@ -128,7 +128,7 @@ const FrontPage = () => {
                   </div>
                 )
               )}
-            </div>
+            </div> */}
 
             <div className="mt-12">
               <Link to="/menu/pizza">

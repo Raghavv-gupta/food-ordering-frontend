@@ -48,7 +48,7 @@ const FoodCard = ({ id, name, description, price, rating, image }) => {
 
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            ${price.toFixed(2)}
+            ₹{price}
           </span>
           <Button
             onClick={handleAddToCart}
